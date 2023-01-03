@@ -1,0 +1,23 @@
+// variables
+
+var a; //delarando
+var b = 'b'; //declarando y asignando
+b = 'bb'; // reasignamos
+var a = 'aa'; //redeclarar
+
+//global scope
+
+var fruit ='Apple';// global
+
+function bestFruit(){
+    console.log(fruit);
+}
+bestFruit();
+
+//asi se forma una variable global por accidente
+function countries(){
+    country ='colombia'; //aqui queda global por que no tiene var  o let
+    console.log(country);
+}
+countries(); //este el el llamado comun
+console.log(country); // no deberia funcionar pero si por lo anterior
